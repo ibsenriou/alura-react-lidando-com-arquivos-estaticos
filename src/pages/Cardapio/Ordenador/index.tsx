@@ -3,6 +3,9 @@ import styles from './Ordenador.module.scss';
 import opcoes from './opcoes.json';
 import classNames from 'classnames';
 import { MdKeyboardArrowDown, MdKeyboardArrowUp } from 'react-icons/md';
+import { type } from '@testing-library/user-event/dist/type';
+
+export type OpcoesOrdenador = '' | 'porcao' | 'qtd_pessoas' | 'preco';
 
 interface Props {
   ordenador: string,
